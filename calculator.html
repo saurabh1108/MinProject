@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+#a1
+{
+height:400px;
+width:400px;
+border:2px groove black;
+margin:100px auto;
+padding:40px;
+font-size:27px;
+}
+#txt1,#txt2
+{
+height:45px;
+width:100%;
+margin-bottom:20px;
+font-size:25px;
+padding:5px;
+}
+button
+{
+height:60px;
+margin:15px;
+min-width:60px;
+font-size:35px;
+padding:7px;
+}
+p
+{
+height:40px;
+width:130px;
+padding:5px;
+font-size:30px;
+border:1px solid black;
+margin:0px;
+}
+</style>
+</head>
+<body>
+<div id="a1">
+Enter first number :<br/>
+<input type="text" class="form-control" id="txt1"/><br/>
+Enter second  number :<br/>
+<input type="text" class="form-control" id="txt2"/><br/>
+Result is :<p id="txt3"></p>
+<button onclick="add()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="div()">/</button>
+<button onclick="multi()">*</button>
+</div>
+<script>
+function add()
+{
+var a = document.querySelector("#txt1").value
+var b = document.querySelector("#txt2").value
+var c = Number (a)+ Number (b);
+var a = document.querySelector("#txt3").innerText=c
+}
+function sub()
+{
+var a = document.querySelector("#txt1").value
+var b = document.querySelector("#txt2").value
+var c=Number (a)- Number (b);
+var a = document.querySelector("#txt3").innerText=c
+}
+function div()
+{
+var a = document.querySelector("#txt1").value
+var b = document.querySelector("#txt2").value
+var c=Number (a)/ Number (b);
+var a = document.querySelector("#txt3").innerText=c
+}
+function multi()
+{
+var a = document.querySelector("#txt1").value
+var b = document.querySelector("#txt2").value
+var c=Number (a)*Number (b);
+var a = document.querySelector("#txt3").innerText=c
+}
+</script>
+</body>
+</html>

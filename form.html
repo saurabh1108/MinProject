@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+#a
+{
+margin:40px auto;
+height:650px;
+width:500px;
+border:2px solid black;
+padding:40px;
+font-size:22px;
+}
+input
+{
+height:40px;
+width:100%;
+margin-bottom:10px;
+font-size:20px;
+
+}
+</style>
+</head>
+<body>
+<div id="a">
+NAME<BR/>
+<input type="text" class="form-control " id="txt" /><br/>
+FATHER NAME<BR/>
+<input type="text" class="form-control" id="txt1"/><br/>
+MOBILE<BR/>
+<input type="NUMBER" class="form-control" id="txt2"/><br/>
+EMAIL<BR/>
+<input type="text" class="form-control" id="txt3"/><br/>
+AGE<BR/>
+<input type="NUMBER" class="form-control" id="txt4"/><br/>
+COLLAGE NAME <BR/>
+<input type="text" class="form-control" id="txt5"/><br/>
+ADDRESS<BR/>
+<input type="text" class="form-control" id="txt6"/><br/>
+PASSWORD<BR/>
+<input type="PASSWORD" class="form-control"id="txt7"/><br/>
+<input type="button" onclick="fun()"class="form-control" value="GET DATA"/><br/>
+</div>
+<script>
+function fun()
+{
+var a=document.getElementById("txt").value
+var a1=document.getElementById("txt1").value
+var a2=document.getElementById("txt2").value
+var a3=document.getElementById("txt3").value
+var a4=document.getElementById("txt4").value
+var a5=document.getElementById("txt5").value
+var a6=document.getElementById("txt6").value
+var a7=document.getElementById("txt7").value
+document.write("Name is : "+a)
+document.write("<br>Father name is : "+a1)
+document.write("<br>Mobile no is : "+a2)
+document.write("<br>Email is : "+a3)
+document.write("<br>Age is : "+a4)
+document.write("<br>Collage name is : "+a5)
+document.write("<br>Address is : "+a6)
+document.write("<br>Password is : "+a7)
+}
+</script>
+
+</body>
+</html>
